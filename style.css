@@ -1,0 +1,206 @@
+/* google font */
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root{
+    --green:hsl(154, 59%, 51%);
+    --red:hsl(0, 100%, 74%);
+    --blue:hsl(248, 32%, 49%);
+    --light-grey:rgba(107, 106, 106, 0.4);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    
+    background-image: url(./images/bg-intro-desktop.png);
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-color:var(--red);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* content container */
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 83%;
+    margin: 7em auto 3em;
+    color: white;
+}
+
+.text-container{
+    width: 50%;
+    margin-right: 3em;
+   
+}
+.text-container h1{
+    font-size: 3rem;
+}
+.text-container p{
+    font-size: 1rem;
+    margin-top: 2em;
+}
+.form{
+    background-color: white;
+    box-shadow: 0 10px var(--light-grey);
+    border: 2px solid rgb(234, 233, 233);
+    border-radius:10px; 
+}
+.form-section{
+    width: 80%;
+    margin: auto;
+    margin-top: 2em;
+}
+.sectionp{
+    background-color: var(--blue);
+    text-align: center;
+    font-size: 0.80rem;
+    font-weight: 400;
+    padding: 1.4em 0;
+    margin-bottom: 2em;
+    box-shadow: 0 10px var(--light-grey);
+    border-radius: 10px
+}
+.sectionp p{
+    opacity: 0.7;
+}
+.sectionp b{
+    opacity: 1;
+}
+.form-section input{
+    border: 2px solid rgb(246, 243, 243);
+    border-radius: 10px;
+    background-color:none;
+    padding: 1em 15em 1em 1.2em;
+   
+}
+input::placeholder{
+    color: gray;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.box{
+    margin-bottom: 1.5em;
+}
+.form-section p{
+    font-size: 0.7rem;
+    text-align: right;
+    color: var(--red);
+    font-style: italic;
+    display: none;
+}
+.btn{
+    background-color:var(--green);
+    padding: 1.2em 8em;
+    border: none;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0.5em;
+    margin-bottom: 1.3em;
+    box-shadow: 0 0.2em hsl(154, 56%, 44%);
+}
+.btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+small{
+    font-size: 0.6rem;
+    color: gray;
+    display: block;
+    text-align: center;
+}
+.form-section b{
+    color: var(--red);
+}
+
+/* Media query */
+
+@media(max-width: 1000px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: 28em;
+        text-align: center;
+        margin: 5em auto 2em;
+      
+    }
+    .sectionp{
+        font-size: 0.9rem;
+        padding: 1.9em 10em;
+    }
+    .form-section input{
+        padding: 0.8em 14.6em 0.8em 1em;
+    }
+    .btn{
+        padding: 1.2em 7.7em;
+    }
+    .text-container{
+        width: 90%;
+    }
+    .text-container h1{
+        font-size: 3.4rem;
+    }
+    .text-container p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 545px) {
+    .wrapper{
+        display: grid;
+        text-align: center;
+        grid-template-columns: 17em;
+        grid-template-rows: 1fr 2fr;
+        margin: 0 auto 2em;
+      
+    }
+    .text-container{
+        width: 90%;
+    }
+    .text-container h1{
+        font-size: 1.2rem;
+    }
+    .text-container p{
+        font-size: 0.8rem;
+        margin-top: 2em;
+    }
+    .sectionp{
+        font-size: 0.75rem;
+        padding: 1.9em 6em;
+    }
+    .form-section input{
+        padding: 0.8em 3.8em 0.8em 1em;
+    }
+    input::placeholder{
+        font-size: 0.7rem;
+    }
+    .btn{
+        padding: 1.2em 2.3em;
+    }
+}
+
+@media (max-width: 300px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 16.5em;
+    }
+    .text-container{
+        width: 90%;
+    }
+    .form-section input{
+        padding: 0.8em 2em 0.8em 1em;
+    }
+    .btn{
+        padding: 1.2em 1.3em;
+    }
+    .sectionp{
+        font-size: 16px;
+        padding: 1.9em 5em;
+    }
+}
